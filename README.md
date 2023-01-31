@@ -137,7 +137,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/ifeanyi305/Enumerable/blob/enumerable/LICENSE) licensed.
+This project is [MIT](https://github.com/ifeanyi305/OOP_school_library/blob/School_library_setup/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
