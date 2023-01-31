@@ -38,16 +38,11 @@
 
 # 📖 [OOP_school_library] <a name="about-project"></a>
 
-This project is about how to use a module inside your class.
-
-**[your_project__name]** is a...
+**[OOP_school_library]**  It is an application built with ruby that allows you to add new students or teachers, add new books, record who has borrowed a given book and when.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <p>Ruby</p>
 <details>
 <summary>Database</summary>
@@ -56,6 +51,12 @@ This project is about how to use a module inside your class.
   </ul>
 </details>
 
+## Key Features  <a href="#key-features"></a>
+  <ul>
+    <li>Add new students or teachers.</li>
+    <li>Add new books.</li>
+    <li>Save records of who borrowed a given book and when.</li>
+  </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +64,6 @@ This project is about how to use a module inside your class.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -117,7 +117,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project...
 
@@ -127,7 +126,6 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
