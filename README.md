@@ -92,7 +92,7 @@ cd OOP_school_library
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/ifeanyi305)
-- Twitter: [@twitterhandle](https://twitter.com/Otifieanyi2020)
+- Twitter: [@twitterhandle](https://twitter.com/OtiJoseph305)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/oti-joseph-ifeanyi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
