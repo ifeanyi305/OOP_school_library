@@ -1,9 +1,8 @@
 require './nameable'
-class Person < Nameable
+class Person
   attr_accessor :id, :name, :age, :rentals
 
-  def initialize(id, name = 'Unknown', age = nil, parent_permission: true)
-    super(id, name, age, parent_permission)
+  def initialize(id, age, name = 'Unknown', parent_permission = 'true')
     @id = id
     @name = name
     @age = age
