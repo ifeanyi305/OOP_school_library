@@ -2,10 +2,13 @@ require './book'
 require './student'
 require './teacher'
 require './rental'
+require './preserve_data'
 class App
   def initialize
-    @books = []
-    @people = []
+    @get_books = get_books
+    @books = get_books || []
+    @get_people = get_people
+    @people = get_people || []
     @rentals = []
   end
 
@@ -27,23 +30,28 @@ class App
   end
 
   def select_contents
-    contents
-    select = gets.chomp.to_i
-    case select
-    when 1
-      list_books
-    when 2
-      list_people
-    when 3
+    loop do
+      contents
+      select = gets.chomp.to_i
+      case select
+      when 1
+        puts list_books
+      when 2
+        list_people
+      when 3
       choose_person
-    when 4
-      add_books
-    when 5
-      add_rental
-    when 6
-      list_rentals
+      when 4
+        add_books
+      when 5
+        add_rental
+      when 6
+        list_rentals
+      when 7
+        library
+        puts 'Thanks for using this application'
+        return
+      end
     end
-    puts 'Thanks for using this application'
   end
 
   def add_books
@@ -55,14 +63,12 @@ class App
     book = Book.new(id, title, author)
     @books << book
     puts "Book created with ID: #{book.id}"
-    select_contents
   end
 
   def list_books
     @books.each do |book|
       puts "#{book.id} #{book.title}, #{book.author}"
     end
-    select_contents
   end
 
   def choose_person
@@ -86,7 +92,6 @@ class App
     @people << Student.new(name, age, parent_permission, classroom, id)
     puts @people
     puts 'student created!'
-    select_contents
   end
 
   def add_teacher
@@ -101,7 +106,6 @@ class App
     @people << Teacher.new(name, age, specialization, id)
     puts @people
     puts 'teacher created!'
-    select_contents
   end
 
   def list_people
@@ -110,7 +114,6 @@ class App
       index += 1
       puts "#{index} #{person.name}, #{person.age}years, id: #{person.id}"
     end
-    select_contents
   end
 
   def add_rental
@@ -126,7 +129,6 @@ class App
     rental = Rental.new(id, date, book_id, person_id)
     @rentals << rental
     puts 'rentals created!'
-    select_contents
   end
 
   def list_rentals
@@ -143,10 +145,15 @@ class App
         puts "ID:#{rental.id} Book: #{book_lab.title} Author: #{book_lab.author} Date: #{rental.date}"
       end
     end
-    select_contents
   end
 
   def find_person(person_id)
     @people.find { |person| person.id == person_id }
+  end
+
+  def library
+    store_books(@books)
+    store_people(@people)
+    store_rental(@rentals)
   end
 end

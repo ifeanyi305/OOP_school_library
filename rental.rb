@@ -1,7 +1,7 @@
 require './book'
 require './person'
 class Rental
-  attr_accessor :date, :book, :person, :person_id, :id
+  attr_accessor :date, :book, :person, :person_id, :book_id, :id
 
   def initialize(id, date, book_id, person_id)
     @date = date
